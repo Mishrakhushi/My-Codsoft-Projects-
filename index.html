@@ -1,93 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Creative Landing Page</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f0f0f0; 
-    }
-
-    header {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 1em 0;
-    }
-
-    h1 {
-      margin: 0;
-    }
-
-    section {
-      max-width: 960px;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    .column {
-      flex: 25%; 
-      padding: 10px;
-    }
-
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 1em 0;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>Welcome to My Landing Page</h1>
-  </header>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>This is a simple landing page created to showcase my HTML and CSS skills. 
-       I'm learning web development and this project is a step towards building a 
-       strong foundation.</p>
-  </section>
+    <section id="home">
+        <div class="container">
+            <h1>Khushi Mishra</h1>
+            <p>Web Developer</p>
+            <a href="#" class="btn">Hire Me</a>
+        </div>
+    </section>
 
-  <section class="container">
-    <h2>My Skills</h2>
-    <div class="column">
-      <h3>HTML</h3>
-      <p>I'm proficient in HTML5 and can create basic to intermediate web structures.</p>
-    </div>
-    <div class="column">
-      <h3>CSS</h3>
-      <p>I'm learning CSS3 and can style elements with colors, fonts, layouts, and more.</p>
-    </div>
-    <div class="column">
-      <h3>JavaScript (Beginner)</h3>
-      <p>I'm currently exploring JavaScript and its capabilities.</p>
-    </div>
-  </section>
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="row">
+                <div class="col-md-6">
+      
+                <div class="col-md-6">
+                    <p>I am a passionate web developer with a strong foundation in HTML, CSS, and JavaScript. 
+                       I am eager to learn and grow my skills in this dynamic field. 
+                       [Add more details about your experience and interests]</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section>
-    <h2>Contact</h2>
-    <p>You can reach me at [Your Email Address]</p>
-  </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>HTML</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>CSS</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 75%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>[Add Another Skill]</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 60%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    &copy; 2023 My Landing Page
-  </footer>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project 1: [Project Title]</h3>
+                <p>[Brief description of Project 1]</p>
+                <a href="[Project Link]" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Project 2: [Project Title]</h3>
+                <p>[Brief description of Project 2]</p>
+                <a href="[Project Link]" target="_blank">View Project</a>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 [Khushi Mishra]. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
